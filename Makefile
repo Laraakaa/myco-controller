@@ -19,6 +19,10 @@ target/$(TARGET)/release/$(NAME).bin: src/*
 target/$(TARGET)/release/$(NAME).uf2: target/$(TARGET)/release/$(NAME).bin
 	$(UF2CONV) -f 0xADA52840 --base $(UF2BASE) --output $@ $<
 
+.PHONY: build
+build:
+	cargo build --release
+
 .PHONY: clean
 clean:
 	cargo clean

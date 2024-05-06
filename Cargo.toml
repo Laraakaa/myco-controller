@@ -9,8 +9,8 @@ edition = "2021"
 [dependencies]
 cortex-m = "0.7.7"
 cortex-m-rt = "0.7.4"
+embedded-hal = "1.0.0"
 nrf52840-hal = "0.17.1"
-# fixed = "1.27.0"
 nrf52840-pac = "0.12.2"
 panic-halt = "0.2.0"
 
